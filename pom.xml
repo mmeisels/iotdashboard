@@ -94,5 +94,5 @@
 	</build>
 		<properties>
               <start-class>com.iot.app.springboot.dashboard.IoTDataDashboard</start-class>
-        </properties>
+        </properties> 
 </project>
