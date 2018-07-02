@@ -12,7 +12,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  *
  */
 @SpringBootApplication
-@RestController
 @EnableScheduling
 @ComponentScan(basePackages = {"com.iot.app.springboot.dashboard", "com.iot.app.springboot.dao"})
 public class IoTDataDashboard {
