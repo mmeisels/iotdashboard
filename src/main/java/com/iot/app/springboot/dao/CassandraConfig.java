@@ -30,7 +30,8 @@ public class CassandraConfig extends AbstractCassandraConfiguration{
         CassandraClusterFactoryBean cluster = new CassandraClusterFactoryBean();
         cluster.setContactPoints(System.getenv().get("IC_CONTACT_POINTS").split(",").toString());
         cluster.setPort(Integer.parseInt(System.getenv().get("IC_PORT")));
-        cluster.setAuthProvider(new PlainTextAuthProvider(System.getenv().get("IC_USER"), System.getenv().get("IC_PASSWORD")));
+        cluster.setUsername(System.getenv().get("IC_USER"));
+        cluster.setPassword(System.getenv().get("IC_PASSWORD"));
         //cluster.setContactPoints(environment.getProperty("com.iot.app.cassandra.host"));
         //cluster.setPort(Integer.parseInt(environment.getProperty("com.iot.app.cassandra.port")));
         return cluster;
