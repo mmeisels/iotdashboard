@@ -32,7 +32,6 @@
 		<dependency>
 		    <groupId>com.datastax.cassandra</groupId>
 		    <artifactId>cassandra-driver-core</artifactId>
-		    <version><latest-version></version>
 		</dependency>
 		<!-- Other dependencies -->
 		<dependency>
