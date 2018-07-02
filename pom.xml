@@ -29,6 +29,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-cassandra</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.datastax.cassandra</groupId>
+		    <artifactId>cassandra-driver-core</artifactId>
+		    <version><latest-version></version>
+		</dependency>
 		<!-- Other dependencies -->
 		<dependency>
 			<groupId>log4j</groupId>
